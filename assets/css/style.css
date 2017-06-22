@@ -1,0 +1,79 @@
+.responsive30{
+  width: 35%
+}
+.responsive60{
+  width: 60%
+}
+.responsive10{
+  width: 10%;
+}
+
+.responsive10:hover {
+  transform: scale(1.3);
+}
+
+.responsive10 {
+  transition: all .2s ease-in-out;
+}
+a, ul{
+  list-style: none;
+  text-decoration: none!important;
+}
+h1{
+  color : #fc4c4f;
+}
+
+.navbar-right {
+    margin-right: 0px!important;
+}
+
+
+/*BG*/
+
+.camera {
+    background-image: url("../img/camera.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.splash {
+    background-image: url("../img/splash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.rec {
+    background-image: url("../img/rec.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Color */
+
+.yellow-text{
+  color: #EBCA3F
+}
+.fa-linkedin{
+color:  #0077B5;
+}
+.fa-facebook{
+color:  #3B5998
+}
+
+.fa-github{
+color:  black;
+}
+nav a{
+color:  black;
+}
+
+.fa-instagram {
+    background-image: -webkit-linear-gradient(bottom left, #FFD521, #EB001E, #B900B4); /* For Chrome and Safari */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/*.bottom-align-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}*/

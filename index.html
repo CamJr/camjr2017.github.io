@@ -4,8 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>CamJR - Portfolio</title>
-  <link type="text/css" rel="stylesheet" href="js/libs/bootstrap/css/bootstrap.min.css" media="screen,projection"/>
-  <!-- <link type="text/css" rel="stylesheet" href="js/libs/materialize/bin/materialize.css" media="screen,projection"/> -->
+  <meta name="description" content="Camille Antoine Fontaine a.k.a CamJr, je suis Developpeur web, graphiste et webdesigner" />
+  <link rel="shortcut icon" href="assets/img/logo.jpg">
+
+
+  <link type="text/css" rel="stylesheet" href="js/libs/bootstrap/css/bootstrap.min.css" media="screen,projection" />
 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="js/libs/components-font-awesome/css/font-awesome.min.css">
@@ -15,30 +18,515 @@
 
 <body>
 
-  <body ng-controller='mainController as vm'>
+  <body>
+
+    <nav class="navbar navbar-custom navbar-fixed-top sticky">
+      <a href="#Accueil" class="navbar-brand black-text">CamJr</a>
+      <div class="collapse navbar-collapse">
+        <ul id="menu" class="navHover nav navbar-nav navbar-right">
+          <li data-menuanchor="accueil"><a href="#accueil">Accueil</a></li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projet <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li data-menuanchor="dev"><a href="#CetT">Composites & Technologies</a></li>
+              <li data-menuanchor="dev"><a href="#bij">Bureau Information Jeunesse</a></li>
+              <li data-menuanchor="dev"><a href="#hopital">Centre Hospitalier de la Loupe</a></li>
+            </ul>
+          </li>
+
+          <li data-menuanchor="dev"><a href="#dev">Dev</a></li>
+
+
+          <li data-menuanchor="graphisme"><a href="#graphisme">Graphisme</a></li>
+
+          <li data-menuanchor="photo"><a href="#photo">Photo</a></li>
+
+          <li data-menuanchor="video"><a href="#video">Vidéo</a></li>
+
+          <li data-menuanchor="video"><a href="#contact">Contact</a></li>
+
+
+        </ul>
+      </div>
+    </nav>
+
+    <!-- <footer class="navbar navbar-custom navbar-fixed-bottom">
+       <a class="navbar-brand">Copyright © 2017 CamJr</a>
+       <div class="collapse navbar-collapse">
+         <ul id="menu" class="navHover nav navbar-nav navbar-right">
+           <li data-menuanchor="firstPage"><a href="legale.html">logo clavier</a></li>
+         </ul>
+       </div>
+     </footer> -->
+
 
 
     <main id="fullpage">
 
       <div class="section">
+        <!-- BIO  -->
         <div class="slide text-center">
-          <img  src="assets/img/logo2017.jpg" alt="photo de profil" />
+          <img src="assets/img/logo.jpg" alt="photo de profil" />
+          <!-- <img class="bottom-align-text " src="assets/img/arrows.jpg" alt="photo de profil" /> -->
         </div>
-        <div class="slide right">
+        <div class="slide">
+          <!-- <div class="text-center">
+            <img class='img-circle' src="assets/img/camjr.jpg" alt="photo de profil" />
+          </div> -->
           <h1 class="container">
                   À propos
                 </h1>
-          <p class="container">Je m'appelle Camille Antoine Fontaine, je suis Developpeur web, graphiste et webdesigner </p><br>
+          <p class="container">Je m'appelle Camille Antoine Fontaine a.k.a CamJr, je suis Developpeur web, graphiste et webdesigner </p><br>
           <h1 class="container">
               Bio
             </h1>
           <p class="container">Originaire de Châteaudun (Eure-et-Loir). Je suis créatif et touche-à-tout – photo, vidéo, musique. j'ai toujours eu la passion des ordinateurs, d’Internet et du développement web.éo et un album photo en ligne. J'ai intégré la session de formation
             de septembre 2016 à la Wild Code School de La Loupe.</p>
         </div>
+        <div class="slide">
+          <h1 class="container">
+                  On parle de moi !
+          </h1>
+
+          <div class="container">
+            <blockquote class="embedly-card">
+              <h4><a href="http://www.lechorepublicain.fr/chartres/science/2017/06/10/dix-huit-etudiants-participent-a-l-hackathon-bouge-ton-territoire-a-chartres_12438652.html">Technologie - Dix-huit étudiants participent à l'hackathon "Bouge ton territoire", à Chartres</a></h4>
+              <p>Dix-huit étudiants, porteurs de projets et créateurs de start-up euréliens, répartis en quatre équipes, participent, jusqu'au dimanche 11 juin 2017, à la cité de l'innovation, au Coudray, à l'Hackathon "Bouge ton territoire", organisé par
+                la Chambre de commerce et d'industrie d'Eure-et-Loir, en partenariat avec le Département et la sous-préfecture d'Eure-et-Loir.</p>
+            </blockquote>
+          </div>
+
+          <div class="container">
+            <blockquote class="embedly-card">
+              <h4><a href="http://www.lechorepublicain.fr/coudray/economie/innovation/2017/06/12/un-hackathon-pour-la-zone-de-poupry_12439438.html">Digital - Un Hackathon pour la zone de Poupry</a></h4>
+              <p>Àl'initiative de Sophie Brocas, préfète d'Eure-et-Loir, s'est tenue, depuis vendredi et jusqu'à hier, en fin d'après-midi, la deuxième édition du Hackathon de la Chambre de commerce et d'industrie d'Eure-et-Loir. La manifestation s'est déroulée
+                dans les locaux du CEEI-Chartres (Centre européen d'entreprise et d'innovation) au sein de la Cité de l'innovation.</p>
+            </blockquote>
+          </div>
+
+          <div class="container">
+            <blockquote class="embedly-card">
+              <h4><a href="http://www.horizons-journal.fr/article/le-numerique-part-dans-les-champs,1660.php">Le numérique part dans les champs</a></h4>
+              <p>Réagir Imprimer Envoyer Partager À Châteaudun, le festival "Futur en Beauce" recense les solutions que le numérique apporte à l'agriculteur et invente celles de demain. Un poulailler connecté, un robot dans les choux, des capteurs de vibrations
+                des tracteurs, une technique révolutionnaire pour détecter plus tôt les mammites, et beaucoup d'autres choses encore : la révolution numérique se concrétise en agriculture.</p>
+            </blockquote>
+          </div>
+
+          <div class="container">
+            <blockquote class="embedly-card">
+              <h4><a href="http://www.lechorepublicain.fr/loupe/economie/innovation/2016/11/14/les-eleves-de-la-wild-code-school-presentent-leurs-premiers-projets-2-0_12152355.html">Web - Les élèves de la Wild code School présentent leurs premiers projets 2.0</a></h4>
+              <p>À La Loupe, la pédagogie de la Wild code School repose sur un enseignement concret : la réalisation de projets avec de vrais clients afin de mettre les vingt-deux élèves de la promo 4, arrivés en septembre, en situation professionnelle et
+                leur permettre de monter en compétences.</p>
+            </blockquote>
+          </div>
+
+
+        </div>
       </div>
+
+      <div class="section">
+        <!-- Projet C&T  -->
+
+        <div class="slide">
+
+          <div class="container">
+            <div class="text-center">
+              <h1>Composites & Technologies</h1>
+              <p>Client | Scorel | 2017 </p>
+              <p>Amélioration de la plateforme de supervision dématérialisée.<br> Ajout de fonctionnalité (Impression des graphiques, Api GoogleMaps).</p>
+            </div>
+            <ul>
+              <li class="text-center">
+                <a href="http://www.composites-technologies.com" class="fa fa-globe fa-3x" target="_blank" aria-hidden="true"></a>
+              </li>
+            </ul>
+            <ul>
+              <div class="text-center">
+                <img class='container responsive10' src="assets/img/logo/html.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/css.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/javascript.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/jquery.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/bootstrap.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/photoshop.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/illustrator.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/adobeXd.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/gimp.png" alt="">
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <div class="text-center">
+              <img class='container' src="assets/img/project/cettHome.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <div class="text-center">
+              <img class='container' src="assets/img/project/cettHome2.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <div class="text-center">
+              <img class='container responsive30' src="assets/img/project/cettResponsive.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <div class="text-center">
+              <img class='container' src="assets/img/project/cettResponsive2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <!-- Projet BIJ  -->
+
+        <div class="slide">
+
+          <div class="container">
+            <div class="text-center">
+              <h1>Bureau Information Jeunesse</h1>
+              <p>Vrai du Faux | BIJ | 2016 - 2017 </p>
+              <p>Création d’une application web pour le Bureau d’Information de Jeunesse <br> Le Vrai du Faux est un journal interactif autour de l’éducation aux médias et à l’information.<br> Création de page animés et mise en place d’un mode hors ligne.
+              </p>
+            </div>
+            <ul>
+              <li class="text-center">
+                <a href="http://www.composites-technologies.com" class="fa fa-github fa-3x" target="_blank" aria-hidden="true"></a>
+              </li>
+            </ul>
+            <ul>
+              <div class="text-center">
+                <img class='container responsive10' src="assets/img/logo/html.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/css.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/javascript.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/mean.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/materialize.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/electron.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/photoshop.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/moqups.png" alt="">
+                <img class='container responsive10' src="assets/img/logo/gimp.png" alt="">
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <div class="text-center">
+              <img class='container' src="assets/img/project/vdfHome.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <div class="text-center">
+              <img class='container' src="assets/img/project/vdfTwitter.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <div class="text-center">
+              <img class='container' src="assets/img/project/vdfTwitter.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <div class="text-center">
+              <img class='container responsive30' src="assets/img/project/vdfSmartphone.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <div class="text-center">
+              <img class='container' src="assets/img/project/vdfSmartphone1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="section">
+        <!-- Hopital  -->
+
+        <div class="slide">
+
+          <div class="container">
+            <div class="text-center">
+              <h1>Hopital de la Loupe</h1>
+              <p>Hopital | 2016 </p>
+              <p>réation d'un site administrable pour l'hôpital de La Loupe.<br> Le site web à la possibilité d'ajouter, de modifier, de supprimer un contenu (article, contact...)
+              </p>
+            </div>
+            <ul>
+              <li class="text-center">
+                <a href="https://github.com/WildCodeSchool/laloupe-0916-ch-laloupe" class="fa fa-github fa-3x" target="_blank" aria-hidden="true"></a>
+              </li>
+            </ul>
+            <div class="text-center">
+              <img class='container responsive10' src="assets/img/logo/html.png" alt="">
+              <img class='container responsive10' src="assets/img/logo/css.png" alt="">
+              <img class='container responsive10' src="assets/img/logo/javascript.png" alt="">
+              <img class='container responsive10' src="assets/img/logo/mean.png" alt="">
+              <img class='container responsive10' src="assets/img/logo/materialize.png" alt="">
+              <img class='container responsive10' src="assets/img/logo/photoshop.png" alt="">
+              <img class='container responsive10' src="assets/img/logo/moqups.png" alt="">
+              <img class='container responsive10' src="assets/img/logo/gimp.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <div class="text-center">
+              <img class='container responsive60' src="assets/img/project/hopitalHome.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <div class="text-center">
+              <img class='container responsive30' src="assets/img/project/hopitalSmartphone.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <div class="text-center">
+              <img class='container' src="assets/img/project/hopitalSmartphone2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="section">
+        <!-- Projet Slider  -->
+        <div class="slide">
+          <h1 class="text-center">Projet</h1>
+          <div class="container">
+            <div class="text-center col-sm-6">
+              <img class='container responsive30' src="assets/img/project/logo/champsDuPossible.png" alt="">
+              <h4>Campus Champs du Possible</h4>
+              <p>Création d'AfterWork avec le Campus Champs du Possible</p>
+              <a href="https://www.facebook.com/events/1905798189700043/" class="fa fa-facebook fa-3x" target="_blank" aria-hidden="true"></a>
+            </div>
+            <div class="text-center col-sm-6">
+              <img class='container responsive30' src="assets/img/project/logo/agriRescue.png" alt="">
+              <h4>Agri-Rescue</h4>
+              <p>Création du site web pour la start-up Agri-Rescue</p>
+              <a href="http://www.Agri-Rescue.com" class="fa fa-globe fa-3x" target="_blank" aria-hidden="true"></a>
+            </div>
+            <!-- <div class="text-center col-sm-4">
+              <img class='container responsive60' src="assets/img/project/logo/perrette.jpg" alt="">
+              <h4>Bureau Information Jeunesse</h4>
+              <a href="" class="fa fa-github fa-3x" target="_blank" aria-hidden="true"></a>
+              <a href="" class="fa fa-globe fa-3x" target="_blank" aria-hidden="true"></a>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <h1 class="text-center">Hackathon</h1>
+            <div class="text-center col-sm-3">
+              <img class='container responsive60' src="assets/img/project/logo/agreenstartup.png" alt="">
+              <h4>Agreen Start-Up 2016 <i class="fa fa-trophy fa-1x yellow-text" aria-hidden="true"></i></h4>
+              <p>2eme Prix - Hackathon Agreen StartUp 2016 - 48H</p>
+              <a href="https://github.com/Celine-Langlade/Agrivideo" class="fa fa-github fa-3x" target="_blank" aria-hidden="true"></a>
+            </div>
+            <div class="text-center col-sm-3">
+              <img class='container responsive60' src="assets/img/project/logo/wcs.png" alt="">
+              <h4>Wild Code School <i class="fa fa-trophy fa-1x yellow-text" aria-hidden="true"></i></h4>
+              <p>1er Prix - Hackathon Wild Codes School - 31H</p>
+              <a href="https://github.com/Jipsian/Hackathon-Movember" class="fa fa-github fa-3x" target="_blank" aria-hidden="true"></a>
+            </div>
+            <div class="text-center col-sm-3">
+              <img class='container responsive60' src="assets/img/project/logo/urotech.png" alt="">
+              <h4>Uro-Tech Challenge <i class="fa fa-trophy fa-1x yellow-text" aria-hidden="true"></i></h4>
+              <p>1er Prix - Hackathon Airliquid - 24H</p>
+              <a href="https://github.com/stephsen/Hackathon_urotech" class="fa fa-github fa-3x" target="_blank" aria-hidden="true"></a>
+            </div>
+            <div class="text-center col-sm-3">
+              <img class='container responsive60' src="assets/img/project/logo/airliquide.png" alt="">
+              <h4>Air liquide <i class="fa fa-trophy fa-1x yellow-text" aria-hidden="true"></i></h4>
+              <p>Prix du jury - Hackathon Uro-Tech Challenge - 24H</p>
+              <a href="https://github.com/Jipsian/hackathon-b-come" class="fa fa-github fa-3x" target="_blank" aria-hidden="true"></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="slide">
+          <div class="container">
+            <h1 class="text-center">Perso</h1>
+            <div class="row">
+              <div class="text-center col-sm-3">
+                <img class='container responsive60' src="assets/img/project/logo/nopsis.png" alt="">
+                <h4>Nopsis</h4>
+                <p>Le blog qui se résume</p>
+                <a href="http://nopsisblog.wordpress.com" class="fa fa-globe fa-3x" target="_blank" aria-hidden="true"></a>
+              </div>
+              <div class="text-center col-sm-3">
+                <img class='container responsive60' src="assets/img/project/logo/blog.png" alt="">
+                <h4>CamJr Blog</h4>
+                <p>Blog perso</p>
+                <a href="" class="fa fa-globe fa-3x" target="_blank" aria-hidden="true"></a>
+              </div>
+              <div class="text-center col-sm-3">
+                <img class='container responsive60' src="assets/img/project/logo/repereage.png" alt="">
+                <h4>Repère-Age</h4>
+                <p>Réalisation d'un album photo sur la ville de Châteaudun, ville située en Eure-Et-Loir.</p>
+                <a href="https://flic.kr/s/aHskBXxZtA" class="fa fa-globe fa-3x" target="_blank" aria-hidden="true"></a>
+              </div>
+              <div class="text-center col-sm-3">
+                <img class='container responsive60' src="assets/img/project/logo/blog.png" alt="">
+                <h4>Lotus X mjml</h4>
+                <p>Light is right</p>
+                <a href="https://github.com/CamJr/lotusXmjml/" class="fa fa-github fa-3x" target="_blank" aria-hidden="true"></a>
+                <a href="https://camjr.github.io/lotusXmjml/" class="fa fa-globe fa-3x" target="_blank" aria-hidden="true"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section text-center">
+        <!-- Graphisme  -->
+        <div class="slide text-center splash">
+          <h1>Graphisme</h1>
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/graphisme/monsterCastle.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/graphisme/crealisa.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/graphisme/stephsen.jpg" alt="">
+        </div>
+      </div>
+
+
+      <div class="section text-center">
+        <!-- PHOTO  -->
+        <div class="slide text-center camera">
+          <h1>Gallery Photo</h1>
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/diapo/chateau.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/diapo/koala.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/diapo/cristal.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/diapo/coucherdesoleil.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/diapo/ville.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/diapo/star.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/diapo/tigre.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/diapo/paris.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/diapo/river.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/diapo/star.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/diapo/toucan.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img class='container' src="assets/img/diapo/fleur.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="section text-center rec">
+        <div class="slide text-center">
+          <h1>Gallery Vidéo</h1>
+        </div>
+
+        <div class="slide text-center">
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/_Hf5ExmkSCI" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+
+        <div class="slide text-center">
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/JMgsEVWSu4Q?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="slide text-center">
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/32gfcrM0NRg?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="slide text-center">
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/cBd9o16TPZ8?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+
+      </div>
+
+
+      <div class="section text-center">
+        <h1>Contact</h1>
+
+        <div class="col-sm-3">
+          <a href="https://github.com/CamJr" class="fa fa-github fa-5x" target="_blank" aria-hidden="true"></a>
+
+        </div>
+        <div class="col-sm-3">
+          <a href="https://www.linkedin.com/in/camfontaine/" class="fa fa-linkedin fa-5x" target="_blank" aria-hidden="true"></a>
+
+        </div>
+        <div class="col-sm-3">
+          <a href="https://www.facebook.com/profile.php?id=100018038828710&ref=bookmarks" class="fa fa-facebook fa-5x" target="_blank" aria-hidden="true"></a>
+
+        </div>
+        <div class="col-sm-3">
+          <a href="https://www.instagram.com/camjroff/" class="fa fa-instagram fa-5x" target="_blank" aria-hidden="true"></a>
+        </div>
+
+      </div>
+
+
     </main>
-
-
 
 
     <script src="js/libs/jquery/dist/jquery.min.js"></script>
@@ -47,20 +535,24 @@
     <!-- <script src="js/libs/angular/angular.min.js"></script> -->
 
     <script type="text/javascript" src="js/libs/bootstrap/js/bootstrap.min.js"></script>
-    <!-- <script type="text/javascript" src="js/libs/materialize/bin/materialize.js"></script> -->
 
 
     <!-- <script src="js/controllers/mainController.js"></script>
 
+
+
     <script src="js/app.js"></script> -->
     <script type="text/javascript">
-  $(document).ready(function() {
-      $('#fullpage').fullpage({
+      $(document).ready(function() {
+
+        $('#fullpage').fullpage({
+          anchors: ['accueil', 'CetT', 'bij', 'hopital', 'dev', 'graphisme', 'photo', 'video', 'contact'],
+          menu: '#menu',
           navigation: true,
           slidesNavigation: true,
+        });
       });
-  });
-</script>
+    </script>
 
   </body>
 

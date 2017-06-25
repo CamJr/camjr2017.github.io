@@ -6,7 +6,7 @@
   <title>CamJr - Developpeur web Jr - Graphiste et WebDesigner</title>
   <meta name="description" content="Camille Antoine Fontaine a.k.a CamJr, je suis developpeur web, graphiste et webdesigner" />
   <meta property="og:image" content="https://camjr.github.io/assets/img/logo.jpg">
-  <link rel="shortcut icon" href="assets/img/logo.jpg">
+  <link rel="shortcut icon" href="assets/img/icon.png">
 
 
   <link type="text/css" rel="stylesheet" href="js/libs/bootstrap/css/bootstrap.min.css" media="screen,projection" />
@@ -20,6 +20,7 @@
 <body>
 
   <body>
+
 
     <nav class="navbar navbar-custom navbar-fixed-top sticky">
       <a href="#accueil" class="navbar-brand black-text">CamJr</a>
@@ -68,8 +69,14 @@
       <div class="section">
         <!-- BIO  -->
         <div class="slide text-center">
-          <img src="assets/img/logo.jpg" alt="photo de profil" />
-          <!-- <img class="bottom-align-text " src="assets/img/arrows.jpg" alt="photo de profil" /> -->
+          <img src="assets/img/logo.png" alt="photo de profil" /><br>
+          <div class="keyboard">
+          <a><img  class="responsive3" src="assets/img/arrowUp.jpg" alt="arrowHaut" /></a><br>
+          <a><img  class="responsive3" src="assets/img/arrowLeft.jpg" alt="arrowGauche" /></a>
+          <a ><img  class="responsive3 arrow" src="assets/img/arrowDown.jpg" alt="arrowBas" /></a>
+          <a><img class="responsive3 arrow" src="assets/img/arrowRight.jpg" alt="arrowDroite" /></a>
+          <p class="container">utilise ton clavier pour te déplacer ! </p><br>
+        </div>
         </div>
         <div class="slide">
           <!-- <div class="text-center">
@@ -567,7 +574,10 @@
 
     <script src="js/app.js"></script> -->
     <script type="text/javascript">
+
       $(document).ready(function() {
+
+ setTimeout(function(){ $('.keyboard').slideUp( 300 ) }, 3000);
 
         $('#fullpage').fullpage({
           anchors: ['accueil', 'CetT', 'bij', 'hopital', 'dev', 'graphisme', 'photo', 'video', 'contact'],

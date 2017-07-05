@@ -78,13 +78,13 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 40px;
+    left: 80px;
     width: 0;
     border-width: 16.5px 16.5px 20px 0;
     border-color: transparent black transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 40px;
+    right: 60px;
     border-width:16.5px 0 16.5px 20px;
     border-color: transparent transparent transparent black;
 }

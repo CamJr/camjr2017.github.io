@@ -1,14 +1,14 @@
 .responsive3{
   width: 3%
 }
+.responsive10{
+  width: 10%;
+}
 .responsive30{
   width: 35%
 }
 .responsive60{
   width: 60%
-}
-.responsive10{
-  width: 10%;
 }
 
 .responsive10:hover, .arrow:hover {
@@ -18,6 +18,9 @@
 .responsive10, .arrow {
   transition: all .2s ease-in-out;
 }
+
+/*Base*/
+
 a, ul{
   list-style: none;
   text-decoration: none!important;
@@ -26,9 +29,45 @@ h1{
   color : #fc4c4f;
 }
 
+nav a{
+color:  white;
+}
+
+a:focus, a:hover{
+color:  #BB0000;
+}
+
+i {
+  font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+
+/*Nav & Footer*/
+
 .navbar-right {
     margin-right: 0px!important;
 }
+
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: white;
+}
+
+footer a:focus, footer a:hover {
+    color: red;
+}
+
+footer a, footer a {
+    color: black;
+}
+
+.menu{
+  cursor: pointer;
+}
+
+
+/*SIdeNav*/
 
 
 /*BG*/
@@ -64,13 +103,85 @@ color:  #3B5998
 .fa-github{
 color:  black;
 }
-nav a{
-color:  black;
-}
 
 .fa-instagram {
     background-image: -webkit-linear-gradient(bottom left, #FFD521, #EB001E, #B900B4); /* For Chrome and Safari */
     color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
+}
+.fa-home:hover{
+  color: #FFFC00;
+}
+.fa-laptop:hover{
+  color: #2ecc71;
+}
+.fa-pencil:hover{
+  color: #f39c12;
+}
+.fa-camera:hover{
+  color: #00933B;
+}
+.fa-video-camera:hover{
+  color: #BB0000;
+}
+.fa-envelope:hover{
+  color: #687485;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sideText{
+display: none;
+}
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 12px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+/*.sidenav a:hover, .offcanvas a:focus{
+    color: red;
+}*/
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

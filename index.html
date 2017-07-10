@@ -111,14 +111,13 @@
             <h4 class="modal-title" id="myModalLabel">Mentions Légales</h4>
           </div>
           <div class="modal-body">
-            <p>Conformément à l’art 6 de la loi du 21 juin 2004, pour la confiance dans l’économie numérique nous vous informons que ce service de communication au public en ligne est mis en place par : <br>
-                Editeur : Camille Antoine Fontaine a.k.a CamJr<br>
-                France<br>
-<br>
-                Directeur de la publication : Camille Antoine Fontaine a.k.a CamJr<br>
-<br>
-                Hébergeur GitHub San Francisco, California, U.S.<br>
-                </p>
+            <p>Conformément à l’art 6 de la loi du 21 juin 2004, pour la confiance dans l’économie numérique nous vous informons que ce service de communication au public en ligne est mis en place par : <br> Editeur : Camille Antoine Fontaine a.k.a CamJr<br>              France
+              <br>
+              <br> Directeur de la publication :
+              <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+              <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/camfontaine" data-format="hover" data-related="false" data-text="Camille Antoine FONTAINE"></script>
+              <br> Hébergeur GitHub San Francisco, California, U.S.<br>
+            </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
@@ -568,13 +567,11 @@
           </div>
           <div class="slide">
             <a data-flickr-embed="true" href="https://www.flickr.com/gp/141695037@N08/K6q7d6" title="toucan"><img src="https://c1.staticflickr.com/5/4287/35340587631_8879f93c1b_b.jpg" width="1024" height="683" alt="toucan"></a>
-            <script async src="//embedr.flickr.com/assets/client-code.js"
-              charset="utf-8"></script>
+            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
           </div>
           <div class="slide">
             <a data-flickr-embed="true" href="https://www.flickr.com/gp/141695037@N08/R3J8P9" title="fleur"><img src="https://c1.staticflickr.com/5/4263/34661178283_9b0ddcef3a_b.jpg" width="1024" height="683" alt="fleur"></a>
-            <script async src="//embedr.flickr.com/assets/client-code.js"
-              charset="utf-8"></script>
+            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
           </div>
         </div>
 
@@ -644,23 +641,23 @@
 
     <script src="js/app.js"></script> -->
     <script type="text/javascript">
-    $(function($) {
+      $(function($) {
         var roles = [
-            'Graphiste',
-            'Web Desiger',
-            'Photographe',
-            'Vidéaste',
-            'Couteau Suisse',
-            'Developpeur Web'
+          'Graphiste',
+          'Web Desiger',
+          'Photographe',
+          'Vidéaste',
+          'Couteau Suisse',
+          'Developpeur Web'
         ];
         //used to determine which is the next roles to be displayed
         var counter = 0;
         var $role = $('#role')
         //repeat the passed function at the specified interval - it is in milliseconds
         setInterval(function() {
-            //display the role and increment the counter to point to next role
-            $role.text(roles[counter++]);
-            //if it is the last role in the array point back to the first item
+          //display the role and increment the counter to point to next role
+          $role.text(roles[counter++]);
+          //if it is the last role in the array point back to the first item
         }, 900)
       });
 

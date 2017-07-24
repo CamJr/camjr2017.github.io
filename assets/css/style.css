@@ -19,6 +19,7 @@
   transition: all .2s ease-in-out;
 }
 
+
 /*Base*/
 
 a, ul{
@@ -90,6 +91,10 @@ footer a, footer a {
 
 /*Color */
 
+
+.grey-text{
+color: #7f8c8d;
+}
 .yellow-text{
   color: #EBCA3F
 }
